@@ -1,0 +1,22 @@
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures {
+    background-color: #AAA;
+    border-radius: 1em;
+}
