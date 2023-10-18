@@ -12,17 +12,17 @@ fetch('https://pokeapi.co/api/v2/pokemon')
         // Pour chaque pokemon je split l'url pour récupérer leurs index
         const index = p.url.split('/')[6];
         // Je créer une balise a pour chaque pokemon
-        const a = document.createElement('a')
+        const a = document.createElement('a');
         // J'ajoute le lien avec le parametre du pokemon
-        a.href = `./detail.html?id=${index}`
+        a.href = `./detail.html?id=${index}`;
         // Je creer une balise img
-        const img = document.createElement('img')
+        const img = document.createElement('img');
         // J'ajoute la source de mon image avec l'index du pokemon
-        img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/0c328e64c6916ec31f9c9ae3a362b0eb9dca66cb/sprites/pokemon/other/dream-world/${index}.svg`
+        img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/0c328e64c6916ec31f9c9ae3a362b0eb9dca66cb/sprites/pokemon/other/dream-world/${index}.svg`;
         // J'ajoute mon image a la balise a
-        a.appendChild(img)
+        a.appendChild(img);
         // J'ajoute ma balise a à ma liste
-        list.appendChild(a)
+        list.appendChild(a);
     })
 })
 .catch(err => console.error(err))
